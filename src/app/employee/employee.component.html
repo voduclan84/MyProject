@@ -1,5 +1,17 @@
-<p>
- <li *ngFor="let employee of employees">
-   {{employee.Name}}
- </li>
-</p>
+<table class ="table">
+    <thead>
+        <tr>
+            <td>  Name  </td>
+            <td>  Age  </td>
+            <td>  Status  </td>
+        </tr>
+    </thead>
+   <tbody>
+       <tr *ngFor ="let employee of employees">
+           <td>{{employee.name}}</td>
+           <td>{{employee.age}}</td>
+           <td>{{employee.status}}</td>
+       </tr>
+   </tbody>
+
+</table>
