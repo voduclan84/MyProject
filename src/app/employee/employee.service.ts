@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import {Response,Http } from '@angular/http';
 import {HttpClient} from '@angular/common/http'; 
-import {IEemployee} from './employee';
 import 'rxjs/Rx';
 import {Observable } from 'rxjs/Observable'
 import { map } from 'rxjs/operators';
