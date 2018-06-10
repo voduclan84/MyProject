@@ -6,11 +6,13 @@ import { EmployeeComponent } from './employee/employee.component';
 import { HttpModule } from '@angular/http';
 import { HomeComponent } from './home/home.component';
 import { aapRoutes } from './route/route-routing.module';
+import { EmployeeDetailComponent } from './employee-detail/employee-detail.component';
 @NgModule({
   declarations: [
     AppComponent,
     EmployeeComponent,
-    HomeComponent
+    HomeComponent,
+    EmployeeDetailComponent
   ],
   imports: [
     BrowserModule, FormsModule, HttpModule, aapRoutes

@@ -11,9 +11,13 @@ import 'rxjs/add/operator/map';
 })
 export class EmployeeService {
 
-  private apiUrl: string = "http://5b17326af5c9b700145511d8.mockapi.io/employeess";
+  private apiUrl: string = "http://5b17326af5c9b700145511d8.mockapi.io/employeess/";
   constructor(private http: Http) { }
   GetList(): Observable<any[]>{
     return this.http.get(this.apiUrl).pipe(map((response:Response) => response.json()));
   }
+  GetSingle(empCode:string): Observable<any>{
+    return this.http.get(this.apiUrl+empCode).pipe(map((response:Response) => response.json()));
+  }
+  
 }
