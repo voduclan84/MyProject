@@ -7,12 +7,21 @@ import { HttpModule } from '@angular/http';
 import { HomeComponent } from './home/home.component';
 import { aapRoutes } from './route/route-routing.module';
 import { EmployeeDetailComponent } from './employee-detail/employee-detail.component';
+import { EmployeeOverviewComponent } from './employee-overview/employee-overview.component';
+import { EmployeeProjectComponent } from './employee-project/employee-project.component';
+import { LoginComponent } from './login/login.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     EmployeeComponent,
     HomeComponent,
-    EmployeeDetailComponent
+    EmployeeDetailComponent,
+    EmployeeOverviewComponent,
+    EmployeeProjectComponent,
+    LoginComponent,
+    
+    
   ],
   imports: [
     BrowserModule, FormsModule, HttpModule, aapRoutes

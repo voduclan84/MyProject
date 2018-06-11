@@ -1,22 +1,24 @@
-<table class ="table">
-        <thead>
-            <tr>
-                <td>  Name  </td>
-                <td>  Age  </td>
-                <td>  Status  </td>
-                <td>  CreateAt  </td>                           
-            </tr>
-        </thead>
-       <tbody>
-           <tr >
-               <td>{{employee.name}}</td>
-               <td>{{employee.age}}</td>
-               <td>{{employee.status}}</td>
-               <td>{{employee.CreateAt}}</td>
-               
-               
-           </tr>
-       </tbody>
+<table class="table">
     
+        <tr>
+            <td> Name </td>
+            <td>{{employee.name}}</td>
+        </tr>
+        <tr>
+            <td> Age </td>
+            <td>{{employee.age}}</td>
+        </tr>
+        <tr>
+            <td> Status </td>
+            <td>{{employee.status}}</td>
+        </tr>
+        <tr>
+            <td> CreateAt </td>
+            <td>{{employee.CreateAt}}</td>
+        </tr>
+
     </table>
-    <button (click)="GotoEmployee()"> Go to employee</button>
+    <a class ="btn btn-default" [routerLink]="['/employee']"> Go Back</a>
+    <a class ="btn btn-primary" [routerLink]="['overview']"> Overview</a>
+    <a class ="btn btn-primary" [routerLink]="['project']"> project</a>
+    <router-outlet></router-outlet>
